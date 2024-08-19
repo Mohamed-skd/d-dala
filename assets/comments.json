@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Alexandre Dupont",
+    "img": "./imgs/alexandre.jpeg",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatem officia quaerat recusandae sed facere dolor deleniti similique voluptate consectetur?"
+  },
+  {
+    "name": "Jean Martin",
+    "img": "./imgs/jean.jpeg",
+    "content": "Possimus cumque natus quia nulla sed expedita corrupti pariatur quidem, ullam atque laudantium unde odio nobis? Quasi soluta repellendus laboriosam!"
+  },
+  {
+    "name": "Marie Dubois",
+    "img": "./imgs/marie.jpeg",
+    "content": "Optio, blanditiis quos! Minus suscipit nobis iusto iure culpa dignissimos fuga reprehenderit maiores, velit expedita inventore voluptatum architecto modi corrupti."
+  },
+  {
+    "name": "Lucien Bernard",
+    "img": "./imgs/lucien.jpeg",
+    "content": "Consectetur velit deserunt quibusdam eius harum ratione ex quidem! Facilis ducimus nisi voluptate distinctio iusto expedita suscipit. Amet, quibusdam voluptate."
+  },
+  {
+    "name": "Sophie Leroy",
+    "img": "./imgs/sophie.jpeg",
+    "content": "Temporibus, recusandae. Quas maxime natus repellendus expedita libero. Possimus nobis ratione quam pariatur minima, explicabo laboriosam vel eaque magnam inventore."
+  },
+  {
+    "name": "Pauline Moreau",
+    "img": "./imgs/pauline.jpeg",
+    "content": "Consequuntur, laudantium ut. Voluptatibus, voluptate ullam. Est unde corrupti hic dolor delectus, labore illo temporibus laudantium explicabo! Autem, dolores eius?"
+  }
+]

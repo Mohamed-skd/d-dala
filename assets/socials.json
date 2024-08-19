@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Facebook",
+    "link": "https://www.facebook.com",
+    "img": "./imgs/facebook.png"
+  },
+  {
+    "name": "X",
+    "link": "https://www.x.com",
+    "img": "./imgs/x.png"
+  },
+  {
+    "name": "Instagram",
+    "link": "https://www.instagram.com",
+    "img": "./imgs/instagram.png"
+  },
+  {
+    "name": "Whatsapp",
+    "link": "https://www.whatsapp.com",
+    "img": "./imgs/whatsapp.png"
+  }
+]

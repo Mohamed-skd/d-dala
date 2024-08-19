@@ -5,6 +5,7 @@ import {
   Dom,
   Fetch,
 } from "./scripts/Funcs.js";
+import "./types.js";
 
 // utils
 export const numFn = new NumberFuncs();
@@ -13,11 +14,4 @@ export const dateFn = new DateFuncs();
 export const dom = new Dom();
 export const fetchFn = new Fetch();
 
-// pages
-const page = document.body.dataset.page;
-
-if (page) {
-  import(`./${page}/app.js`)
-    .then((m) => m.default())
-    .catch(dom.error);
-}
+dom.setCopyright();
