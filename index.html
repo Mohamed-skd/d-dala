@@ -1,40 +1,174 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="canonical" href="http://localhost:8080" />
-<base target="_blank" />
-<noscript>
-<h1
-style="
-text-align: center;
-color: red;
-border: 2px solid;
-background-color: white;
-">
-Navigation difficile ou impossible sans JavaScript. 😭
-</h1>
-</noscript>
-<meta name="description" content="" />
-<link rel="shortcut icon" href="./imgs/icon.png" type="image/png" />
-<link rel="stylesheet" href="./assets/style.css" />
-<script type="module" src="./assets/script.js"></script>
-<title>Simple Webapp</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="http://localhost:8080" />
+    <base target="_blank" />
+    <noscript>
+      <h1
+        style="
+          text-align: center;
+          color: red;
+          border: 2px solid;
+          background-color: white;
+        "
+      >
+        Navigation difficile ou impossible sans JavaScript. 😭
+      </h1>
+    </noscript>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="./imgs/icon.png" type="image/png" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script type="module" src="./assets/script.js"></script>
+    <title>Bob le Bricoleur</title>
+  </head>
 
-<body>
-<header>
-<h1>Simple Webapp</h1>
+  <body>
+    <header>
+      <h1>Bob le Bricoleur</h1>
 
-<aside id="notifications"></aside>
-</header>
+      <aside id="langs"></aside>
+      <aside id="theme"></aside>
+      <aside id="notifications"></aside>
+    </header>
 
-<main></main>
+    <main>
+      <section>
+        <h2>Une Maison Confortable 🏠</h2>
 
-<footer>
-<p id="copyright"></p>
-</footer>
-</body>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          doloremque odio exercitationem deserunt debitis sunt, eligendi placeat
+          eos beatae inventore ratione, quasi adipisci, veniam laudantium enim
+          blanditiis culpa atque! Eos et in possimus dolor ratione sint impedit
+          rem hic nesciunt. Ea quas similique minus ipsum quia quis asperiores
+          voluptate. Culpa?
+        </p>
+
+        <picture>
+          <source media="(min-width: 40rem)" srcset="./imgs/bg-hero.jpg" />
+          <img src="./imgs/sm-hero.jpg" alt="Une belle maison." />
+        </picture>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          pariatur dolorum, nulla, itaque porro adipisci illum sequi maiores
+          blanditiis, vero odit laboriosam atque? Consectetur maiores amet fugit
+          minima et sequi ad recusandae laboriosam accusantium quisquam officiis
+          ea quasi repudiandae exercitationem, repellendus facilis quae
+          adipisci. Minus sunt dignissimos aspernatur repellat magnam!
+        </p>
+      </section>
+
+      <section>
+        <h2>Moi et mes outils 🛠️</h2>
+
+        <article class="grid">
+          <div>
+            <h3>Votre Bricoleur</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+              repudiandae necessitatibus consequuntur nemo ab magnam laborum
+              repellat similique, ducimus, numquam doloribus hic. Dolore
+              molestias repellendus eligendi ab neque veritatis unde animi,
+              corporis, quidem rem culpa itaque optio mollitia voluptatem id
+              nesciunt maiores! Exercitationem ipsum vitae rerum sed est minima
+              mollitia.
+            </p>
+            <p>
+              Dolorem ad reprehenderit aliquam rem qui corporis esse
+              voluptatibus hic magnam officiis mollitia ab, quia maxime sed
+              sequi explicabo dignissimos animi unde at earum laborum et nostrum
+              debitis. Tempore dolorum esse, eaque maiores odit sit error ullam.
+              Neque doloremque praesentium doloribus, perspiciatis et aspernatur
+              temporibus voluptatibus earum ea, amet placeat.
+            </p>
+          </div>
+
+          <img src="./imgs/bio.jpg" alt="Une photo de Bob" />
+        </article>
+
+        <article>
+          <aside>
+            <h3>Un Équipement Professionel</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              consequatur ex enim itaque vel odio natus vero ipsam id ea!
+            </p>
+          </aside>
+
+          <div id="galery">
+            <article>
+              <img src="" alt="" />
+              <p class="opt-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aliquid beatae quas molestiae veniam provident laboriosam at.
+                Ipsum alias veniam ex odit cumque sed numquam tempora voluptas
+                fugiat animi? Voluptatum, dignissimos?
+              </p>
+              <p class="opt-bg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                neque delectus officiis nam cumque nemo distinctio consequatur
+                atque mollitia. Veniam tempora at neque maiores, tempore,
+                explicabo qui voluptatibus ab facilis laboriosam itaque incidunt
+                suscipit debitis autem aliquam temporibus eligendi quidem dolor
+                enim perferendis obcaecati dolores reiciendis. Quod omnis non
+                consectetur dolores eveniet debitis error quae qui
+                exercitationem inventore pariatur architecto, aliquam dolor
+                reprehenderit recusandae dignissimos cumque ipsum est distinctio
+                quibusdam soluta odit. Consequuntur ipsum magni voluptatibus
+                facere vero, aut reprehenderit?
+              </p>
+            </article>
+
+            <aside class="flex"></aside>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h2>Ils m'ont fait confiance 👇🏾</h2>
+
+        <div id="comments" class="grid"></div>
+      </section>
+
+      <section>
+        <h2>Vers votre Projet 🫱🏽‍🫲🏻</h2>
+
+        <article>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+            veritatis debitis tenetur voluptates cupiditate sapiente, a
+            recusandae, temporibus veniam deserunt deleniti illum odio at
+            nesciunt nemo accusamus repellat cumque distinctio corporis, omnis
+            eos ipsum dolor! Amet deserunt dolorem ipsam voluptatum?
+          </p>
+
+          <form target="_self" method="post" class="form">
+            <input type="text" name="name" placeholder="Nom" />
+            <input type="email" name="mail" placeholder="E-Mail" />
+            <textarea
+              name="message"
+              cols="18"
+              rows="6"
+              placeholder="Message"
+            ></textarea>
+            <button class="bt">Envoyer</button>
+          </form>
+        </article>
+
+        <aside>
+          <h3>Mes réseaux</h3>
+
+          <div id="network"></div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p id="copyright"></p>
+    </footer>
+  </body>
 </html>
