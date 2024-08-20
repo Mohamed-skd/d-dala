@@ -16,11 +16,11 @@ export const fetchFn = new Fetch();
 
 // datas
 /** @type {Com[]} */
-const comments = await fetchFn.get("./assets/comments.json");
+const comments = await fetchFn.get("./assets/datas/comments.json");
 /** @type {Tool[]} */
-const tools = await fetchFn.get("./assets/tools.json");
+const tools = await fetchFn.get("./assets/datas/tools.json");
 /** @type {Social[]} */
-const socials = await fetchFn.get("./assets/socials.json");
+const socials = await fetchFn.get("./assets/datas/socials.json");
 const title = dom.select("h1");
 
 // app

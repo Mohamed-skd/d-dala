@@ -132,9 +132,9 @@
 }
 
 #theme {
-  position: fixed;
+  position: absolute;
   z-index: 20;
-  inset: 2rem 2rem auto auto;
+  inset: 6rem 2rem auto auto;
 
   button {
     width: 2rem;
