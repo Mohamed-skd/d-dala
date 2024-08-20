@@ -113,9 +113,6 @@ body > main {
       @media (hover) {
         opacity: 0;
       }
-      @media (prefers-color-scheme: dark) {
-        background-color: hsl(0, 0%, 0%, 0.8);
-      }
     }
 
     aside {
