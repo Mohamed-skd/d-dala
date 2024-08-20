@@ -130,3 +130,17 @@
     }
   }
 }
+
+#theme {
+  position: fixed;
+  z-index: 20;
+  inset: 2rem 2rem auto auto;
+
+  button {
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: currentColor;
+    cursor: pointer;
+  }
+}

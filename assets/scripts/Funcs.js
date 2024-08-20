@@ -408,9 +408,9 @@ export class Dom extends Base {
       if (typeof tag !== "string") throw new Error("Invalid tag.");
       res = document.querySelector(tag);
     } catch (err) {
-      return this.error(err);
+      res = this.error(err);
     }
-    return res;
+    return res instanceof HTMLElement ? res : false;
   }
 
   /**
@@ -714,6 +714,54 @@ export class Dom extends Base {
    */
   appendHtml(parent, html) {
     parent.insertAdjacentHTML("beforeend", html);
+  }
+
+  /**
+   * Handle dark theme
+   * @param {HTMLElement[] | null} elems Optional element which theme change
+   * @returns
+   */
+  handleTheme(elems = null) {
+    try {
+      const themeDom = this.select("#theme");
+      if (!themeDom) throw new Error("Invalid theme.");
+      const button = this.create("button");
+      const mediaScheme = matchMedia("(prefers-color-scheme:dark)");
+      let darkTheme = mediaScheme.matches;
+
+      const setTheme = () => {
+        if (darkTheme) {
+          document.documentElement.style.colorScheme = "dark";
+          if (elems) {
+            for (let i = 0; i < elems.length; i++) {
+              this.modClass(elems[i], "dark");
+            }
+          }
+        } else {
+          document.documentElement.style.colorScheme = "light";
+          if (elems) {
+            for (let i = 0; i < elems.length; i++) {
+              this.modClass(elems[i], "dark", "del");
+            }
+          }
+        }
+      };
+      const togTheme = () => {
+        darkTheme = !darkTheme;
+        setTheme();
+      };
+
+      setTheme();
+      themeDom.append(button);
+      button.addEventListener("click", togTheme);
+      mediaScheme.addEventListener("change", () => {
+        darkTheme = mediaScheme.matches;
+        setTheme();
+      });
+    } catch (err) {
+      return this.error(err);
+    }
+    return true;
   }
 }
 export class Fetch extends Base {

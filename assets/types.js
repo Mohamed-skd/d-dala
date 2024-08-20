@@ -1,19 +1,20 @@
 /**
  * @typedef {{
- * name:string
- * img:string
- * content:string
- * }} Comment
+ * name: string,
+ * img: string,
+ * content: string
+ * }} Com
  */
 
 /**
  * @typedef {{
- * img:{
+ * id: number
+ * img: {
  * src: string,
  * alt: string
- * },
- * sm-desc:string
- * bg-desc:string
+ * }
+ * smdesc: string,
+ * bgdesc: string,
  * }} Tool
  */
 

@@ -18,7 +18,7 @@
         Navigation difficile ou impossible sans JavaScript. 😭
       </h1>
     </noscript>
-    <meta name="description" content="" />
+    <meta name="description" content="Votre Bricoleur !" />
     <link rel="shortcut icon" href="./imgs/icon.png" type="image/png" />
     <link rel="stylesheet" href="./assets/style.css" />
     <script type="module" src="./assets/script.js"></script>
@@ -29,13 +29,12 @@
     <header>
       <h1>Bob le Bricoleur</h1>
 
-      <aside id="langs"></aside>
       <aside id="theme"></aside>
       <aside id="notifications"></aside>
     </header>
 
     <main>
-      <section>
+      <section id="hero">
         <h2>Une Maison Confortable 🏠</h2>
 
         <p>
@@ -62,10 +61,12 @@
         </p>
       </section>
 
-      <section>
+      <section id="bio">
         <h2>Moi et mes outils 🛠️</h2>
 
         <article class="grid">
+          <img src="./imgs/bio.jpg" alt="Une photo de Bob" />
+
           <div>
             <h3>Votre Bricoleur</h3>
             <p>
@@ -86,8 +87,6 @@
               temporibus voluptatibus earum ea, amet placeat.
             </p>
           </div>
-
-          <img src="./imgs/bio.jpg" alt="Une photo de Bob" />
         </article>
 
         <article>
@@ -99,14 +98,14 @@
             </p>
           </aside>
 
-          <div id="galery">
-            <article>
+          <div id="tools">
+            <article class="grid">
               <img src="" alt="" />
               <p class="opt-sm"></p>
               <p class="opt-bg"></p>
             </article>
 
-            <aside class="flex"></aside>
+            <aside></aside>
           </div>
         </article>
       </section>
@@ -117,7 +116,7 @@
         <div id="comments" class="grid"></div>
       </section>
 
-      <section>
+      <section id="your-project">
         <h2>Vers votre Projet 🤝</h2>
 
         <article>
@@ -130,13 +129,27 @@
           </p>
 
           <form target="_self" method="post" class="form">
-            <input type="text" name="name" placeholder="Nom" />
-            <input type="email" name="mail" placeholder="E-mail" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Nom"
+              maxlength="100"
+              required
+            />
+            <input
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+              maxlength="100"
+              required
+            />
             <textarea
               name="message"
               cols="18"
               rows="6"
               placeholder="Message"
+              minlength="20"
+              required
             ></textarea>
             <button class="bt">Envoyer</button>
           </form>
@@ -145,7 +158,7 @@
         <aside>
           <h3>Mes réseaux</h3>
 
-          <div id="network"></div>
+          <div id="socials"></div>
         </aside>
       </section>
     </main>
