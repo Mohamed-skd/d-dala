@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Montage de meubles",
+    "img": "./imgs/service-1.jpg",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quas odit fuga suscipit quasi iste soluta iusto! Tenetur magnam dolorem nesciunt sint rem natus sequi harum illo. Harum, perspiciatis quaerat animi enim debitis hic aspernatur soluta eligendi odio, quia repellendus sit distinctio quo magnam odit? Impedit reiciendis repellat expedita numquam adipisci obcaecati, laborum eligendi aliquid optio illum atque voluptates quae modi enim architecto id quam possimus iusto non, velit, perferendis a. Optio voluptatibus, dolore atque blanditiis odio neque ut tempora nostrum corrupti nam architecto numquam qui sunt ab. Quaerat at facere, consequuntur iure ducimus expedita labore eius perspiciatis est repudiandae itaque odio natus? Sint debitis veritatis ullam dolores voluptas. Eos explicabo, reiciendis ullam commodi magni assumenda dolorum asperiores delectus beatae."
+  },
+  {
+    "id": 2,
+    "name": "Jardinage",
+    "img": "./imgs/service-2.jpg",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quas odit fuga suscipit quasi iste soluta iusto! Tenetur magnam dolorem nesciunt sint rem natus sequi harum illo. Harum, perspiciatis quaerat animi enim debitis hic aspernatur soluta eligendi odio, quia repellendus sit distinctio quo magnam odit? Impedit reiciendis repellat expedita numquam adipisci obcaecati, laborum eligendi aliquid optio illum atque voluptates quae modi enim architecto id quam possimus iusto non, velit, perferendis a. Optio voluptatibus, dolore atque blanditiis odio neque ut tempora nostrum corrupti nam architecto numquam qui sunt ab. Quaerat at facere, consequuntur iure ducimus expedita labore eius perspiciatis est repudiandae itaque odio natus? Sint debitis veritatis ullam dolores voluptas. Eos explicabo, reiciendis ullam commodi magni assumenda dolorum asperiores delectus beatae."
+  },
+  {
+    "id": 3,
+    "name": "Plomberie",
+    "img": "./imgs/service-3.jpg",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quas odit fuga suscipit quasi iste soluta iusto! Tenetur magnam dolorem nesciunt sint rem natus sequi harum illo. Harum, perspiciatis quaerat animi enim debitis hic aspernatur soluta eligendi odio, quia repellendus sit distinctio quo magnam odit? Impedit reiciendis repellat expedita numquam adipisci obcaecati, laborum eligendi aliquid optio illum atque voluptates quae modi enim architecto id quam possimus iusto non, velit, perferendis a. Optio voluptatibus, dolore atque blanditiis odio neque ut tempora nostrum corrupti nam architecto numquam qui sunt ab. Quaerat at facere, consequuntur iure ducimus expedita labore eius perspiciatis est repudiandae itaque odio natus? Sint debitis veritatis ullam dolores voluptas. Eos explicabo, reiciendis ullam commodi magni assumenda dolorum asperiores delectus beatae."
+  },
+  {
+    "id": 4,
+    "name": "Electroménager",
+    "img": "./imgs/service-4.jpg",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quas odit fuga suscipit quasi iste soluta iusto! Tenetur magnam dolorem nesciunt sint rem natus sequi harum illo. Harum, perspiciatis quaerat animi enim debitis hic aspernatur soluta eligendi odio, quia repellendus sit distinctio quo magnam odit? Impedit reiciendis repellat expedita numquam adipisci obcaecati, laborum eligendi aliquid optio illum atque voluptates quae modi enim architecto id quam possimus iusto non, velit, perferendis a. Optio voluptatibus, dolore atque blanditiis odio neque ut tempora nostrum corrupti nam architecto numquam qui sunt ab. Quaerat at facere, consequuntur iure ducimus expedita labore eius perspiciatis est repudiandae itaque odio natus? Sint debitis veritatis ullam dolores voluptas. Eos explicabo, reiciendis ullam commodi magni assumenda dolorum asperiores delectus beatae."
+  }
+]

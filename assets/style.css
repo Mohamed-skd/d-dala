@@ -48,6 +48,38 @@ body > main {
     margin-top: 2rem;
   }
 
+  #services {
+    position: relative;
+    margin-block: 2rem;
+
+    & > aside {
+      padding: 0.4rem;
+      position: sticky;
+      top: 0;
+      background-color: hsl(var(--clr-lighter), 0.6);
+      text-align: center;
+    }
+    & > aside .bt {
+      padding: 0.4rem 1rem;
+      border-radius: 0.4rem 0.4rem 0 0;
+      background-color: hsl(var(--clr-lighter), 0.4);
+    }
+    & > aside .bt.selected {
+      background-color: white;
+    }
+
+    .service {
+      @media (width>40rem) {
+        grid-template-columns: 1fr 1fr;
+
+        img {
+          align-self: center;
+          height: 80%;
+        }
+      }
+    }
+  }
+
   #bio {
     & > article:nth-of-type(1) {
       @media (width>40rem) {

@@ -25,3 +25,12 @@
  * img: string
  * }} Social
  */
+
+/**
+ * @typedef {{
+ * id: number,
+ * name: string,
+ * img:string,
+ * desc:string
+ * }} Service
+ */

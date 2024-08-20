@@ -15,6 +15,8 @@ export const dom = new Dom();
 export const fetchFn = new Fetch();
 
 // datas
+/** @type {Service[]} */
+const services = await fetchFn.get("./assets/datas/services.json");
 /** @type {Com[]} */
 const comments = await fetchFn.get("./assets/datas/comments.json");
 /** @type {Tool[]} */
@@ -24,6 +26,61 @@ const socials = await fetchFn.get("./assets/datas/socials.json");
 const title = dom.select("h1");
 
 // app
+function setServices() {
+  const servicesDom = dom.select("#services");
+  const servicesAside = servicesDom.querySelector("aside");
+  const grid = dom.create("div", { class: "grid" });
+
+  /**
+   * @param {Service} service
+   */
+  const renderService = (service) => {
+    const article = dom.create("article", {
+      class: "grid service",
+      "data-id": service.id,
+    });
+    const textContent = dom.create("div", { class: "grid" });
+    const title = dom.create("h3");
+    const img = dom.create("img", {
+      src: service.img,
+      alt: `Image de ${service.name}`,
+    });
+    const info = dom.create("p");
+
+    title.textContent = service.name;
+    info.textContent = service.desc;
+    textContent.append(title, info);
+    article.append(img, textContent);
+    grid.append(article);
+  };
+  const selectService = (e) => {
+    const target = e.target;
+    if (!(target instanceof HTMLButtonElement)) return;
+
+    const prevSelected = dom.select("#services .bt.selected");
+    const serviceId = parseInt(target.dataset.service);
+    const service = services.find((s) => s.id === serviceId);
+    if (!service) return;
+
+    dom.modClass(prevSelected, "selected", "del");
+    dom.modClass(target, "selected");
+    dom.removeChildren(grid);
+    renderService(service);
+  };
+
+  for (let i = 0; i < services.length; i++) {
+    const bt = dom.create("button", {
+      class: i === 0 ? "bt selected" : "bt",
+      "data-service": services[i].id,
+    });
+    bt.textContent = services[i].name;
+    servicesAside.append(bt);
+  }
+
+  renderService(services[0]);
+  servicesAside.addEventListener("click", selectService);
+  servicesDom.append(grid);
+}
 function setTools() {
   const toolsDom = dom.select("#tools");
   if (!toolsDom) return;
@@ -128,6 +185,7 @@ function handleForm() {
   form.addEventListener("submit", submitMessage);
 }
 
+setServices();
 setTools();
 setComments();
 setSocials();
