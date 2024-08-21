@@ -19,8 +19,6 @@ export const fetchFn = new Fetch();
 const services = await fetchFn.get("./assets/datas/services.json");
 /** @type {Com[]} */
 const comments = await fetchFn.get("./assets/datas/comments.json");
-/** @type {Tool[]} */
-const tools = await fetchFn.get("./assets/datas/tools.json");
 /** @type {Social[]} */
 const socials = await fetchFn.get("./assets/datas/socials.json");
 const title = dom.select("h1");
@@ -81,58 +79,6 @@ function setServices() {
   servicesAside.addEventListener("click", selectService);
   servicesDom.append(grid);
 }
-function setTools() {
-  const toolsDom = dom.select("#tools");
-  if (!toolsDom) return;
-
-  const toolImg = toolsDom.querySelector("img");
-  const toolSm = toolsDom.querySelector(".opt-sm");
-  const toolBg = toolsDom.querySelector(".opt-bg");
-  const toolAside = toolsDom.querySelector("aside");
-  let i = 0;
-
-  for (let i = 0; i < tools.length; i++) {
-    const button = dom.create("button", {
-      class: "bt",
-      "data-id": tools[i].id,
-    });
-    toolAside.append(button);
-  }
-
-  /**
-   * @param {Tool} tool
-   */
-  const setTool = (tool) => {
-    const syncBt = toolAside.querySelector(`button[data-id="${tool.id}"]`);
-    const selected = toolAside.querySelector(".slct-tool");
-
-    if (selected) dom.modClass(selected, "slct-tool", "del");
-    dom.modClass(syncBt, "slct-tool");
-    toolImg.src = tool.img.src;
-    toolImg.alt = tool.img.alt;
-    toolSm.textContent = tool.smdesc;
-    toolBg.textContent = tool.bgdesc;
-  };
-  const interval = () =>
-    setInterval(() => {
-      i++;
-      i = i < tools.length ? i : 0;
-      setTool(tools[i]);
-    }, 10000);
-
-  setTool(tools[i]);
-  let interId = interval();
-  toolAside.addEventListener("click", (e) => {
-    clearInterval(interId);
-    const bt = e.target;
-    if (!(bt instanceof HTMLButtonElement)) return;
-
-    const id = bt.dataset.id;
-    i = id - 1;
-    setTool(tools[i]);
-    interId = interval();
-  });
-}
 function setComments() {
   const commentsDom = dom.select("#comments");
   for (let i = 0; i < comments.length; i++) {
@@ -186,7 +132,6 @@ function handleForm() {
 }
 
 setServices();
-setTools();
 setComments();
 setSocials();
 handleForm();

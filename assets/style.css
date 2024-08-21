@@ -32,20 +32,15 @@ body > header {
 body > main {
   margin: 1rem auto;
   & > section {
-    margin: 10rem auto;
+    margin: 4rem auto;
     width: min(80rem, 100% - 1rem);
   }
 
-  #hero,
-  #tools {
+  #hero {
     img {
       margin-block: 1rem;
       max-height: 70dvh;
     }
-  }
-
-  #hero {
-    margin-top: 2rem;
   }
 
   #services {
@@ -90,46 +85,6 @@ body > main {
           height: 80%;
         }
       }
-    }
-  }
-
-  #tools {
-    @media (hover) {
-      article:hover {
-        & p {
-          opacity: 1;
-        }
-      }
-    }
-    article img {
-      grid-area: 1/1/3/2;
-    }
-    article p {
-      grid-area: 2/1/3/2;
-      margin: 0 0 1rem 0;
-      padding: 1rem;
-      color: black;
-      background-color: hsl(0, 100%, 100%, 0.8);
-      @media (hover) {
-        opacity: 0;
-      }
-    }
-
-    aside {
-      text-align: center;
-    }
-    aside button {
-      aspect-ratio: 6/1;
-      width: 4rem;
-      border-radius: 1rem;
-    }
-    @media (hover) {
-      aside button:hover {
-        background-color: hsl(var(--clr-lighter), 0.6);
-      }
-    }
-    aside button.slct-tool {
-      background-color: hsl(var(--clr-darker));
     }
   }
 
