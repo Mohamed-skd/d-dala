@@ -22,8 +22,25 @@ const comments = await fetchFn.get("./assets/datas/comments.json");
 /** @type {Social[]} */
 const socials = await fetchFn.get("./assets/datas/socials.json");
 const title = dom.select("h1");
+const imgs = await loadServImgs();
 
 // app
+function loadServImgs() {
+  const prs = [];
+
+  for (let i = 0; i < services.length; i++) {
+    const pr = new Promise((res) => {
+      const img = new Image();
+      img.src = services[i].img;
+      img.alt = services[i].name;
+      res(img);
+    });
+
+    prs.push(pr);
+  }
+
+  return Promise.all(prs);
+}
 function setServices() {
   const servicesDom = dom.select("#services");
   const servicesAside = servicesDom.querySelector("aside");
@@ -39,10 +56,7 @@ function setServices() {
     });
     const textContent = dom.create("div", { class: "grid" });
     const title = dom.create("h3");
-    const img = dom.create("img", {
-      src: service.img,
-      alt: `Image de ${service.name}`,
-    });
+    const img = imgs.filter((i) => i.alt === service.name)[0];
     const info = dom.create("p");
 
     title.textContent = service.name;
