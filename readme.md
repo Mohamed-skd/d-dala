@@ -1,3 +1,3 @@
-# Bob le bricoleur
+# Bob le Bricoleur
 
 Exemple de vendeur de service.

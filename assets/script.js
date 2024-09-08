@@ -25,6 +25,9 @@ const title = dom.select("h1");
 const imgs = await loadServImgs();
 
 // app
+dom.handleTheme([title]);
+dom.setCopyright();
+
 function loadServImgs() {
   const prs = [];
 
@@ -149,5 +152,3 @@ setServices();
 setComments();
 setSocials();
 handleForm();
-dom.handleTheme([title]);
-dom.setCopyright();

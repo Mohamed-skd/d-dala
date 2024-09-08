@@ -694,7 +694,7 @@ export class Dom extends Base {
       const themeDom = this.select("#theme");
       if (!themeDom) throw new Error("Invalid theme.");
       const fetchFn = new Fetch();
-      const button = this.create("button");
+      const button = this.create("button", { title: "Theme" });
       const mediaScheme = matchMedia("(prefers-color-scheme:dark)");
       const histTheme = fetchFn.local("dark-theme");
       let darkTheme = histTheme.get() ?? mediaScheme.matches;
